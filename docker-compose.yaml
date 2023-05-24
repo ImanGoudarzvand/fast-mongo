@@ -1,0 +1,20 @@
+services:
+  db:
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - db-mongo:/data/db
+
+
+  redis:
+    image: redis:7
+    ports:
+      - 6379:6379
+
+
+
+
+
+volumes:
+  db-mongo:
